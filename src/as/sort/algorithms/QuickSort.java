@@ -1,20 +1,24 @@
 package as.sort.algorithms;
 
-// Divide and conquer algorithm
-// Recursive algorithm
-// Uses a pivot element to partition the array into two parts
-// Elements < pivot to its left, elements > pivot to its right
-// Pivot will then be in its correct sorted position
-// Repeat recursively. Eventually, every element has been the pivot,
-// so every element will be in its correct sorted position
-// As with merge sort, we'll end yp partitioning the array into
-// a series of 1-element arrays
+/*
+ Divide and conquer algorithm
+ Recursive algorithm
+ Uses a pivot element to partition the array into two parts
+ Elements < pivot to its left, elements > pivot to its right
+ Pivot will then be in its correct sorted position
+ Repeat recursively. Eventually, every element has been the pivot,
+ so every element will be in its correct sorted position
+ As with merge sort, we'll end yp partitioning the array into
+ a series of 1-element arrays
+*/
 
-// In-place algorithm
-// O(nlogn) - base 2. (Average case. It's O(n2) in the worst case)
-// We're repeatedly partitioning the array into two halves
-// Mostly it performs better than Merge Sort
-// Unstable algorithm
+/*
+ In-place algorithm
+ O(nlogn) - base 2. (Average case. It's O(n2) in the worst case)
+ We're repeatedly partitioning the array into two halves
+ Mostly it performs better than Merge Sort
+ Unstable algorithm
+*/
 
 public class QuickSort {
     public static void main(String[] args) {

@@ -1,43 +1,55 @@
 package as.queues;
 
-// 0 - jane - front
-// 1 - john
-// 2 - mary
-// 3 - mike
-// 4         - back
+/*
+ 0 - jane - front
+ 1 - john
+ 2 - mary
+ 3 - mike
+ 4         - back
+ */
 
-// 0
-// 1 - john - front
-// 2         - back
-// 3
-// 4
+/*
+ 0
+ 1 - john - front
+ 2         - back
+ 3
+ 4
+ */
 
-// 0
-// 1
-// 2 - mary - front
-// 3         - back
-// 4
+/*
+ 0
+ 1
+ 2 - mary - front
+ 3         - back
+ 4
+ */
 
-// 0         - back
-// 1
-// 2
-// 3 - mike - front
-// 4 - bill
+/*
+ 0         - back
+ 1
+ 2
+ 3 - mike - front
+ 4 - bill
+ */
 
-// 0 - jane
-// 1 - john
-// 2 -      - back      <- so, there is no space anymore
-// 3 - mike - front
-// 4 - bill
+/*
+ 0 - jane
+ 1 - john
+ 2 -      - back      <- so, there is no space anymore
+ 3 - mike - front
+ 4 - bill
+ */
 
-// 0 - mike - front     <- now we place front elements at the beginning of the array
-// 1 - bill
-// 2 - jane             <- we place other elements just after
-// 3 - john
-// 4       - back
-// 5                    <- and there are left the empty places because of the resizing of the array
-// ...
-// 9
+/*
+ 0 - mike - front     <- now we place front elements at the beginning of the array
+ 1 - bill
+ 2 - jane             <- we place other elements just after
+ 3 - john
+ 4       - back
+ 5                    <- and there are left the empty places because of the resizing of the array
+ ...
+ 9
+ */
 
 import as.lists.Employee;
 

@@ -1,8 +1,10 @@
 package as.lists;
 
-// Vector is a thread-safe ArrayList
-// Unlike the new collection implementations, Vector is synchronized
-// Synchronisation has an overhead involved
+/*
+ Vector is a thread-safe ArrayList
+ Unlike the new collection implementations, Vector is synchronized
+ Synchronisation has an overhead involved
+ */
 
 import java.util.List;
 import java.util.Vector;

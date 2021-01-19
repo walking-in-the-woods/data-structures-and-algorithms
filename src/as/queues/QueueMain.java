@@ -1,19 +1,25 @@
 package as.queues;
 
-// Abstract data type
-// FIFO - first in, first out
-// add - also called  enqueue - add an item to the end of the queue
-// remove - also called dequeue - remove an item at the front of the queue
-// peek - get the item at the front of the queue, but don't remove it
+/*
+ Abstract data type
+ FIFO - first in, first out
+ add - also called  enqueue - add an item to the end of the queue
+ remove - also called dequeue - remove an item at the front of the queue
+ peek - get the item at the front of the queue, but don't remove it
+ */
 
-// Time Complexity:
-// O(1) for push, pop, and peek, when using a LinkedList
-// O(n) for push when using an Array because the array may have to be resized
+/*
+ Time Complexity:
+ O(1) for push, pop, and peek, when using a LinkedList
+ O(n) for push when using an Array because the array may have to be resized
+ */
 
-// JDK Queue<E>
-// DoublyLinkedList is perfect for queue implementation
-// Dequeue<E> supports element insertion and removal at both ends.
-// "dequeue" is short from "double ended queue" and is usually pronounced "deck"
+/*
+ JDK Queue<E>
+ DoublyLinkedList is perfect for queue implementation
+ Dequeue<E> supports element insertion and removal at both ends.
+ "dequeue" is short from "double ended queue" and is usually pronounced "deck"
+ */
 
 import as.lists.Employee;
 

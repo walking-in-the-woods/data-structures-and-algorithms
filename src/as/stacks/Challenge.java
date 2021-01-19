@@ -1,11 +1,13 @@
 package as.stacks;
 
-// Checking if a string is a palindrome:
-// - create a stack (LIFO)
-// - convert the given string to lower case
-// - put this string to the stack we've created char by char filtering those chars
-// - create a reversed string popping chars from the stack
-// - compare these two strings, a lowercased and filtered one and the reversed one
+/*
+ Checking if a string is a palindrome:
+ - create a stack (LIFO)
+ - convert the given string to lower case
+ - put this string to the stack we've created char by char filtering those chars
+ - create a reversed string popping chars from the stack
+ - compare these two strings, a lowercased and filtered one and the reversed one
+*/
 
 import java.util.LinkedList;
 

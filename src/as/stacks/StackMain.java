@@ -1,18 +1,22 @@
 package as.stacks;
 
-// Abstract data type
-// LIFO - Last in, first out
-// push - adds an item as the top item on the stack
-// pop - removes the top item on the stack
-// peek - gets the top item on the stack
-// Ideal backing data structure: LinkedList
-// Stack is the perfect data structure for a Call Stack
+/*
+ Abstract data type
+ LIFO - Last in, first out
+ push - adds an item as the top item on the stack
+ pop - removes the top item on the stack
+ peek - gets the top item on the stack
+ Ideal backing data structure: LinkedList
+ Stack is the perfect data structure for a Call Stack
+*/
 
-// Time Complexity:
-// O(1) for push, pop, and peek, when using a LinkedList
-// O(n) for push when using an Array because the array may have to be resized
-// If we know the maximum number of items that will ever bo on the stack, an array can be a good choice
-// If memory is tight, an array might be a good choice
+/*
+ Time Complexity:
+ O(1) for push, pop, and peek, when using a LinkedList
+ O(n) for push when using an Array because the array may have to be resized
+ If we know the maximum number of items that will ever bo on the stack, an array can be a good choice
+ If memory is tight, an array might be a good choice
+*/
 
 import as.lists.Employee;
 

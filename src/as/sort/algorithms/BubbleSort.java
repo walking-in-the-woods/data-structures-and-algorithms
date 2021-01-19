@@ -1,11 +1,23 @@
 package as.sort.algorithms;
 
+/*
+     In-place algorithm (doesn't need to make copies)
+     O(n2) time complexity - quadratic
+     Stable sort algorithm
+     There is no division by sorted ond unsorted partitions
+*/
+
+/*
+    Stable and Unstable Sort Algorithms:
+    If a sort is UNSTABLE, the relative ordering of duplicate items will NOT BE PRESERVED
+    (the previously processed duplicate will end up coming BEFORE the next one)
+    For a STABLE sort it's is vise versa.
+    STABLE sort is PREFERABLE to an UNSTABLE sort.
+    (It especially matters for the arrays containing objects)
+*/
+
 public class BubbleSort {
     public static void main(String[] args) {
-        //In-place algorithm (doesn't need to make copies)
-        // O(n2) time complexity - quadratic
-        // Stable sort algorithm
-        // There is no division by sorted ond unsorted partitions
 
         int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 
@@ -29,12 +41,4 @@ public class BubbleSort {
         array[i] = array[j];
         array[j] = temp;
     }
-
-    /* Stable and Unstable Sort Algorithms:
-    If a sort is UNSTABLE, the relative ordering of duplicate items will NOT BE PRESERVED
-    (the previously processed duplicate will end up coming BEFORE the next one)
-    For a STABLE sort it's is vise versa.
-    STABLE sort is PREFERABLE to an UNSTABLE sort.
-    (It especially matters for the arrays containing objects)
-     */
 }

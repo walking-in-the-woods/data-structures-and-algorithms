@@ -1,12 +1,15 @@
 package as.sort.algorithms;
 
+/*
+ In-place algorithm
+ O(n2) time complexity - quadratic
+ Unstable algorithm
+ Doesn't require as much swapping as bubble sort
+ There is division by sorted ond unsorted partitions
+*/
+
 public class SelectionSort {
     public static void main(String[] args) {
-        // In-place algorithm
-        // O(n2) time complexity - quadratic
-        // Unstable algorithm
-        // Doesn't require as much swapping as bubble sort
-        // There is division by sorted ond unsorted partitions
 
         int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 

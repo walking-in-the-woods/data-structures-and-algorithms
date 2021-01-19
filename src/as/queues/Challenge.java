@@ -1,10 +1,12 @@
 package as.queues;
 
-// "dad"
-// stack: push('d'), push('a'), push('d') : 'd1', 'a', 'd2'
-// stack: pop('d'), pop('a'), pop('d') : 'd2', 'a', 'd1' (LIFO behavior) <- compare this
-// queue: add('d'), add('a'), add('d') : 'd1', 'a', 'd2'
-// queue: remove('d'), remove('a'), remove('d') : 'd1', 'a', 'd2' (FIFO behavior) <- and this
+/*
+ "dad"
+ stack: push('d'), push('a'), push('d') : 'd1', 'a', 'd2'
+ stack: pop('d'), pop('a'), pop('d') : 'd2', 'a', 'd1' (LIFO behavior) <- compare this
+ queue: add('d'), add('a'), add('d') : 'd1', 'a', 'd2'
+ queue: remove('d'), remove('a'), remove('d') : 'd1', 'a', 'd2' (FIFO behavior) <- and this
+ */
 
 import java.util.LinkedList;
 

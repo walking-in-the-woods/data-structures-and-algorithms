@@ -1,11 +1,14 @@
 package as.sort.algorithms;
 
+/*
+ in-place algorithm
+ O(n2) time complexity - quadratic
+ Stable algorithm
+ There is division by sorted ond unsorted partitions
+*/
+
 public class InsertionSort {
     public static void main(String[] args) {
-        // in-place algorithm
-        // O(n2) time complexity - quadratic
-        // Stable algorithm
-        // There is division by sorted ond unsorted partitions
 
         int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 

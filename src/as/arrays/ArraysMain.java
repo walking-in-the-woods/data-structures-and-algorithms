@@ -2,6 +2,24 @@ package as.arrays;
 
 // Te best characteristic of an array is a fast retrieving an element if we know it's index
 
+        /* If an array starts at memory address x, and the size of each element in the array is y,
+        we can calculate the memory address of the i'th element by using an expression: x + i * y
+        So, if we know the index af an element, the time to retrieve the element wil be the same
+         */
+
+        /* Time complexity of the operations:
+        1. Retrieve with index - O(1) - Constant time
+        2. Retrieve without index - O(n) - Linear time (because we should loop over the array)
+        3. Add an element to a full array - 0(n) (because we should copy an array and fill it with elements)
+        4. Add an element to the end of an array (has space) - O(1)
+        5. Insert or update an element at a specific index - O(1)
+        6. Delete an element by setting it to null - O(1)
+        7. Delete an element by shifting elements - O(n)
+         */
+
+// So, if we HAVE TO LOOP OVER an array we get O(n) time complexity,
+// if we don't have to do it we get O(1) time complexity
+
 public class ArraysMain {
     public static void main(String[] args) {
         int[] intArray = new int[7];
@@ -30,23 +48,5 @@ public class ArraysMain {
             }
         }
         System.out.println("index = " + index);
-
-        /* If an array starts at memory address x, and the size of each element in the array is y,
-        we can calculate the memory address of the i'th element by using an expression: x + i * y
-        So, if we know the index af an element, the time to retrieve the element wil be the same
-         */
-
-        /* Time complexity of the operations:
-        1. Retrieve with index - O(1) - Constant time
-        2. Retrieve without index - O(n) - Linear time (because we should loop over the array)
-        3. Add an element to a full array - 0(n) (because we should copy an array and fill it with elements)
-        4. Add an element to the end of an array (has space) - O(1)
-        5. Insert or update an element at a specific index - O(1)
-        6. Delete an element by setting it to null - O(1)
-        7. Delete an element by shifting elements - O(n)
-         */
-
-        // So, if we HAVE TO LOOP OVER an array we get O(n) time complexity,
-        // if we don't have to do it we get O(1) time complexity
     }
 }

@@ -1,24 +1,30 @@
 package as.search.algorithms;
 
-// Data must be sorted!
-// Cheeses the element in the middle of the array and compares it against the search value
-// If element is equal to the value, we're done
-// If element is greater than the value, search the left half of the array
-// If the element is less than the value, search the right half of the array
+/*
+ Data must be sorted!
+ Cheeses the element in the middle of the array and compares it against the search value
+ If element is equal to the value, we're done
+ If element is greater than the value, search the left half of the array
+ If the element is less than the value, search the right half of the array
+ */
 
-// { -22, -15, 1, 7, 20, 35, 55 } original sorted array
-// Search value: 1
-// start = 0, end = 7, midpoint = (start + end)/2 = 3
-// array[3] = 7 - this is greater than 1, so we'll look at the left half of the array
-// start = 0, end = midpoint = 3, midpoint = (start + end)/2 = 1
-// array[1] = -15 - this is less than 1, so we'll look at the right half of the array
-// start = midpoint + 1 = 2, end = 3, midpoint = (start + end)/2 = 2
-// array[2] = 1 - we have found our value
+/*
+ { -22, -15, 1, 7, 20, 35, 55 } original sorted array
+ Search value: 1
+ start = 0, end = 7, midpoint = (start + end)/2 = 3
+ array[3] = 7 - this is greater than 1, so we'll look at the left half of the array
+ start = 0, end = midpoint = 3, midpoint = (start + end)/2 = 1
+ array[1] = -15 - this is less than 1, so we'll look at the right half of the array
+ start = midpoint + 1 = 2, end = 3, midpoint = (start + end)/2 = 2
+ array[2] = 1 - we have found our value
+ */
 
-// At some point, there will be only one element in the partition we're checking,
-// but it doesn't have to get to that point
-// Can be implemented recursively
-// O(logn) - keeps dividing the array in half
+/*
+ At some point, there will be only one element in the partition we're checking,
+ but it doesn't have to get to that point
+ Can be implemented recursively
+ O(logn) - keeps dividing the array in half
+ */
 
 public class BinarySearch {
     public static void main(String[] args) {

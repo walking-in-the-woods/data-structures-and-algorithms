@@ -1,16 +1,18 @@
 package as.lists;
 
-// HEAD -> "Jane" -> "John" -> "Mary" -> "Mike" -> null
-// Using a LinkList we have to store not only values but references as well
-// HEAD -> "Bill" -> Jane" -> "John" -> "Mary" -> "Mike" -> null
-// removedNode:"Bill" <- HEAD -> "Jane" -> "John" -> "Mary" -> "Mike" -> null
-// Addition dnd Removing time complexity in front of the list is O(1) (there is no shifting)
-// Insertion and Removing at the body of a list performs in linear time 0(n)
+/*
+ HEAD -> "Jane" -> "John" -> "Mary" -> "Mike" -> null
+ Using a LinkList we have to store not only values but references as well
+ HEAD -> "Bill" -> Jane" -> "John" -> "Mary" -> "Mike" -> null
+ removedNode:"Bill" <- HEAD -> "Jane" -> "John" -> "Mary" -> "Mike" -> null
+ Addition dnd Removing time complexity in front of the list is O(1) (there is no shifting)
+ Insertion and Removing at the body of a list performs in linear time 0(n)
 
-// There is also a CircularLinkedList which is a variation of a SinglyLinkedList
-// In this variation the last node in the list doesn't point to null
-// Instead, it points to the head of the list
-// And one advantage to this is that we can traverse the entire list starting at any node
+ There is also a CircularLinkedList which is a variation of a SinglyLinkedList
+ In this variation the last node in the list doesn't point to null
+ Instead, it points to the head of the list
+ And one advantage to this is that we can traverse the entire list starting at any node
+*/
 
 public class SinglyLinkedList {
     public static void main(String[] args) {
